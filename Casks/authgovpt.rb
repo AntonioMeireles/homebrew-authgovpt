@@ -1,4 +1,4 @@
-# Copyright (c) 2022-2024 António Meireles
+# Copyright (c) 2022-2026 António Meireles
 #
 # Licensed under the MIT License (the "License");
 # you may not use this file except in compliance with the License.
@@ -30,10 +30,5 @@ cask 'authgovpt' do
   desc 'Identificação, autenticação e assinatura digital do Estado Português'
   homepage 'https://www.autenticacao.gov.pt/cc-aplicacao'
 
-  pkg 'Autenticacao.gov_MacOS.pkg'
-  uninstall pkgutil: 'pt.cartaodecidadao.*'
-
-  caveats do
-    files_in_usr_local
-  end
+  pkg 'Autenticacao.Gov_MacOS.pkg'
 end
